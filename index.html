@@ -58,6 +58,10 @@ h1{margin-bottom:12px}
 .photo-row.four{grid-template-columns:repeat(2,1fr)}
 .photo-row.four img,.photo-row.wide img{aspect-ratio:4/3}
 .photo-row.tall img{aspect-ratio:3/5}
+.photo-row.pair{grid-template-columns:repeat(2,1fr);gap:8px;margin:32px 0}
+.photo-row.pair figure{margin:0}
+.photo-row.pair img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:6px}
+.photo-row.pair figcaption{font-size:12px;color:#aaa;text-align:center;margin-top:6px}
 .photo-hero{aspect-ratio:1/1;object-fit:cover;object-position:center 20%}
 
 /* ── PDF page-break fixes ── */
@@ -104,7 +108,7 @@ img{page-break-inside:avoid;break-inside:avoid;display:block}
 <div class="photo-row">
 <img src="img/student1.jpg" alt="Ученица с сертификатом" loading="lazy">
 <img src="img/student2.jpg" alt="Ученица с сертификатом" loading="lazy">
-<img src="img/manuals.jpg" alt="Авторские пособия" loading="lazy">
+<img src="img/journal.jpg" alt="Авторское методическое пособие" loading="lazy">
 </div>
 <p class="photo-caption">Обучаю мастеров по своим авторским методикам</p>
 
@@ -139,6 +143,8 @@ img{page-break-inside:avoid;break-inside:avoid;display:block}
 
 <p>Но нужда и желание зарабатывать оказались сильнее страха.</p>
 
+<img class="photo photo-sm" src="img/first-studio.jpg" alt="Кристина за работой" loading="lazy">
+
 <p>Каждые выходные я проезжала <strong>700 километров</strong> на попутках и автобусах, чтобы успеть принять клиенток в родной Кусе. Потом поняла, что многие из них переезжают в Челябинск, и подключила этот город тоже: снимала кушетки на час, приглашала клиенток, а они рассказывали обо мне подругам.</p>
 
 <p>И параллельно с нуля <strong>набирала клиентскую базу в Екатеринбурге</strong>.</p>
@@ -150,8 +156,10 @@ img{page-break-inside:avoid;break-inside:avoid;display:block}
 
 <p>И у меня начало получаться. Уже <strong>через год</strong> я смогла снять небольшую студию рядом с университетом в Екатеринбурге и вышла на первые <strong>60–70 тысяч в месяц</strong>. Через 3 года купила свой первый автомобиль.</p>
 
-<img class="photo photo-sm" src="img/first-studio.jpg" alt="Кристина в своей первой студии" loading="lazy">
-<p class="photo-caption">Моя первая студия</p>
+<div class="photo-row pair">
+<figure><img src="img/cabinet.jpg" alt="Первая студия" loading="lazy"><figcaption>Моя первая студия</figcaption></figure>
+<figure><img src="img/kia.jpg" style="object-position:22% center" alt="Первая машина" loading="lazy"><figcaption>Моя первая машина</figcaption></figure>
+</div>
 
 <p>И тогда я поняла главное:</p>
 
@@ -162,6 +170,8 @@ img{page-break-inside:avoid;break-inside:avoid;display:block}
 <h2>Мечта, которая казалась неподъёмной</h2>
 
 <p>На 4-й год работы я открыла свою первую небольшую студию и начала обучать мастеров.</p>
+
+<img class="photo photo-sm" src="img/elevator.jpg" alt="Кристина Кабанова" loading="lazy">
 
 <p>А на 5-м курсе приняла решение, которое пугало меня больше всех переездов: <strong>я не пойду работать по профессии</strong>, а буду развивать своё дело.</p>
 
@@ -248,6 +258,8 @@ img{page-break-inside:avoid;break-inside:avoid;display:block}
 <p>Первых клиентов нужно не ждать, а <strong>активно привлекать</strong> — каждый день, сразу несколькими способами.</p>
 </div>
 
+<img class="photo photo-sm" src="img/mirror.jpg" alt="Кристина в своём салоне" loading="lazy">
+
 <div style="margin:28px 0">
 <div class="error-label">Ошибка третья</div>
 <p class="error-title">Ты набираешь клиентов скидками.</p>
@@ -262,8 +274,6 @@ img{page-break-inside:avoid;break-inside:avoid;display:block}
 <blockquote><p>Скидка привлекает не клиента, а охотника за скидками.</p></blockquote>
 <p>Новый клиент должен приходить на твою основную стоимость. Потому что его привлекает не цена, а твоя уверенность и твоя ценность.</p>
 </div>
-
-<img class="photo photo-md" src="img/garland.jpg" alt="Кристина Кабанова в салоне" loading="lazy">
 
 <hr>
 
@@ -337,10 +347,7 @@ img{page-break-inside:avoid;break-inside:avoid;display:block}
 
 <h2>Что происходит, когда у тебя полная запись</h2>
 
-<div class="photo-row two two">
-<img src="img/relax1.jpg" alt="Кристина Кабанова" loading="lazy">
-<img src="img/relax2.jpg" alt="Кристина Кабанова" loading="lazy">
-</div>
+<img class="photo photo-sm" src="img/relax2.jpg" alt="Кристина Кабанова" loading="lazy">
 
 <p>Платишь аренду и не считаешь, сколько осталось. Покупаешь премиальные материалы, не выбирая самое дешёвое.</p>
 
